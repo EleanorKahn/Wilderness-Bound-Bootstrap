@@ -48,3 +48,11 @@ header h2 {
 .carousel {
     border: solid #5637DD;
 }
+
+/* will position these buttons at the bottom right of their parent container. z index ensures buttons will display on top of the parent container rather than being hidden beneath it.  */
+#carouselButton {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+}

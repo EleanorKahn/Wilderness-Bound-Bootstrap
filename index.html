@@ -194,6 +194,14 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <div class="btn-group" id="carouselButton">
+                        <button class="btn btn-danger btn-sm" id="carouselPause">
+                            <i class="fa fa-pause">Pause</i>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carouselPlay">
+                            <i class="fa fa-play">Play</i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -312,13 +320,25 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-    <!--The script below initializes tooltips, which are made possible by popper.js, installed above
+    <!--The script below initializes tooltips, which are made possible by popper.js, installed above 
     <script>
         $(function () {
             $('[data-toggle="tooltip"]').tooltip()
         })
     </script>
--->
+    -->
+    <script>
+        $(function() {
+            $(".carousel").carousel( { interval: 2000 } );
+            $("#carouselPause").click(function(){
+                $(".carousel").carousel("pause");
+            });
+            $("#carouselPlay").click(function(){
+                $(".carousel").carousel("cycle");
+            });
+        });
+    </script>
+
 
 </body>
 </html>
