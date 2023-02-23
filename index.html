@@ -4,15 +4,15 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- build:css css/main.css -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>
-    <link rel="stylesheet" href="css/styles.css"/>
     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css"/>
     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css"/>
+    <link rel="stylesheet" href="css/styles.css"/>
+    <!-- endbuild -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans"/>
     <title>NuCamp: A Better Way To Camp</title>
 </head>
-
-<!--Have not done Bootstrap and jQuery-->
 
 <body>
 
@@ -50,7 +50,6 @@
                                     <label for="numCampers" class="col-form-label">Number of Campers</label>
                                 </div>
                                 <div class="col">
-                                    <!--Not sure why my select dropdown is taking up so little room-->
                                     <select class="col-sm form-control" name="numCampers" id="numCampers">
                                         <option>Select</option>
                                         <option value="1">1</option>
@@ -153,7 +152,6 @@
     </div>
 
     <div class="container">
-
         <!--The Carousel Section-->
         <div class="row row-content">
             <div class="col col-md-8 mx-auto">
@@ -270,12 +268,12 @@
             </div>
         </div>
     </footer>
+    <!-- build:js js/main.js -->
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
     <script src="js/script.js"></script>
-
+    <!-- endbuild -->
 
 </body>
 </html>
