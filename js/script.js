@@ -1,6 +1,6 @@
 $(function() {
     $(".carousel").carousel( { interval: 2000 } );
-    $("#carouselButton").click(function(){
+    $("#carouselButton").on("click", (function(){
         if ($("#carouselButton").children("i").hasClass("fa-pause")) {
             $(".carousel").carousel("pause");
             $("#carouselButton").children("i").removeClass("fa-pause");
@@ -10,5 +10,17 @@ $(function() {
             $("#carouselButton").children("i").removeClass("fa-play");
             $("#carouselButton").children("i").addClass("fa-pause");
         }
+    }));
+});
+
+$(function() {
+    $("#reserveButton").on("click", function(){
+        $("#reserveModal").modal("toggle");
+    });
+});
+
+$(function() {
+    $("#loginButton").on("click", function(){
+        $("#loginModal").modal("toggle");
     });
 });
