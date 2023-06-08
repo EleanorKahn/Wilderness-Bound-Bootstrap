@@ -13,17 +13,21 @@
         "test": "echo \"Error: no test specified\" && exit 1",
         "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
         "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\"",
-        "deploy": "npm run build"
+        "deploy": "npm run build",
+        "usemin": "usemin contactus.html -d dist --htmlmin -o dist/contactus.html && usemin aboutus.html -d dist --htmlmin -o dist/aboutus.html && usemin index.html -d dist --htmlmin -o dist/index.html",
+        "imagemin": "imagemin img/* -o dist/img"
     },
     "author": "Eleanor",
     "license": "ISC",
     "devDependencies": {
         "copyfiles": "^2.2.0",
+        "imagemin-cli": "^5.1.0",
         "lite-server": "^2.6.1",
         "onchange": "^7.0.0",
         "parallelshell": "3.0.1",
         "rimraf": "^3.0.2",
-        "sass": "^1.63.2"
+        "sass": "^1.63.2",
+        "usemin-cli": "^0.6.0"
     },
     "dependencies": {
         "bootstrap": "^4.5.2",
