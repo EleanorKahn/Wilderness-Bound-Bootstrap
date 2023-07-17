@@ -1,7 +1,7 @@
 {
-    "name": "nucampsite",
+    "name": "wilderness-bound",
     "version": "1.0.0",
-    "description": "This is a website for the fictional campsites review site NuCamp.",
+    "description": "This is a website for the fictional campsites review site Wilderness Bound.",
     "main": "index.html",
     "scripts": {
         "build": "npm run clean && npm run imagemin && npm run copyfonts && npm run usemin",
